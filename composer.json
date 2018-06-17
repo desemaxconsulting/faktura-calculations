@@ -1,0 +1,48 @@
+{
+    "name": "desemax/faktura-calculations",
+    "description": "Invoice calculation(s) related functionality",
+    "keywords": [
+        "desemax",
+        "desemaxconsulting",
+        "faktura",
+        "faktura-calculations",
+        "invoice"
+    ],
+    "homepage": "https://github.com/desemaxconsulting/faktura-calculations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Desemax Dev Team",
+            "email": "info@desemax.com",
+            "homepage": "https://desemax.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "vlucas/phpdotenv": "~2.2"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.2",
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faktura\\Calculations\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faktura\\Calculations\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
